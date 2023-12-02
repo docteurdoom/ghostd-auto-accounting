@@ -1,0 +1,16 @@
+[Unit]
+Description=Ghost Coin Auto Accounting
+After=network.target
+
+[Service]
+WorkingDirectory=/path/to/dir/with/executable
+
+User=your_username
+
+Restart=always
+TimeoutStopSec=1
+
+ExecStart=/path/to/executable
+
+[Install]
+WantedBy=multi-user.target
